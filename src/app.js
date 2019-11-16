@@ -1,11 +1,13 @@
 import "./sass/default.sass";
 import "./sass/game.sass";
 
-import game from "./components/game";
+import Game from "./components/game";
 
-const workarea =  document.getElementById('workarea');
-const field = new game();
+const mainGame = new Game();
 
-workarea.insertAdjacentHTML('afterbegin', field.renderGame());
+mainGame.createGame(300, 300);
+mainGame.start();
+mainGame.addBar();
 
-console.log(field);
+
+console.log(mainGame);

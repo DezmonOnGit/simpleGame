@@ -8,11 +8,14 @@
   max-width: 1200px;
   margin: 0 auto; }
 .game {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 50px; }
   .game__field {
     width: 500px;
     height: 500px;
-    background-color: grey; }
+    margin: 0 auto;
+    background-color: grey;
+    position: relative; }
+  .game__item {
+    position: absolute; }
+  .game__bar {
+    width: 100%; }
